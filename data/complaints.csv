@@ -1,0 +1,4 @@
+complaint_ref,household_ref,merchant_ref,category,impact_band,submitted_at,source_ref
+C-1,H-1,M-1,refund,medium,2026-02-01,S-1
+C-2,H-1,M-1,renewal,high,2026-02-03,S-2
+C-3,H-2,M-2,advice,unknown,2026-02-04,S-3

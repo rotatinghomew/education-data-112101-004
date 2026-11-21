@@ -1,0 +1,5 @@
+event_ref,complaint_ref,event_type,event_at,team_ref,detail
+EV-1,C-1,assigned,2026-02-02,T-1,初次登记
+EV-2,C-1,waiting_consumer,2026-02-04,T-1,补充付款记录
+EV-3,C-1,received_evidence,2026-02-10,T-1,补充记录到达
+EV-4,C-2,transferred,2026-02-11,T-2,关联审查
