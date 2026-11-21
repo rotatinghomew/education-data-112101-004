@@ -1,3 +1,6 @@
 left_ref,right_ref,link_type,decision,decided_at
 C-1,C-2,same_household,confirmed,2026-02-12
 C-2,C-3,similar_phrase,unreviewed,
+C-5,C-4,same_household,confirmed,2026-02-10
+C-10,C-9,similar_phrase,unreviewed,
+C-15,C-14,same_household,confirmed,2026-02-20
