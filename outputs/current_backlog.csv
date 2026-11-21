@@ -1,0 +1,4 @@
+category,internal_open_cases,external_open_cases,open_independent_households,external_wait_ages,responsible_teams,routing_basis
+advice,1,0,1,,T-3,historical_closed_cases_only
+refund,1,5,6,7;4;1;13;10,T-1,observed_on_open_cases
+renewal,7,0,6,,T-2,observed_on_open_cases

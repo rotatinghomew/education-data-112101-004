@@ -1,0 +1,879 @@
+{
+  "as_of": "2026-02-23",
+  "as_of_iso_week": "2026-W09",
+  "latest_arrival_period": "2026-W08",
+  "latest_capacity_period": "2026-W08",
+  "projection_meta": {
+    "projected_periods": [
+      "2026-W09",
+      "2026-W10",
+      "2026-W11",
+      "2026-W12"
+    ],
+    "external_lag_scenarios_days": {
+      "pessimistic": 6.0,
+      "central": 6,
+      "optimistic": 6.5
+    }
+  },
+  "config": {
+    "cycles": 4,
+    "working_days_per_week": 5.0,
+    "utilization_low_central_high": [
+      0.7,
+      0.85,
+      0.95
+    ],
+    "backlog_clear_cycles": 4,
+    "priority_weights": {
+      "age": 0.3,
+      "impact": 0.25,
+      "readiness": 0.15,
+      "scope": 0.15,
+      "stage": 0.15
+    },
+    "unknown_factor_floor": 0.5
+  },
+  "audits": [
+    {
+      "category": "advice",
+      "team_ref": "T-3",
+      "scenario": "pessimistic",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 9,
+            "independent_households": 8,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W06",
+            "received": 8,
+            "independent_households": 7,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W07",
+            "received": 16,
+            "independent_households": 13,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W08",
+            "received": 11,
+            "independent_households": 9,
+            "corrections": 1
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 8,
+          "central": 19,
+          "high": 22,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.8486
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 0,
+          "open_independent_households": 1,
+          "open_case_refs": [
+            "C-3"
+          ]
+        },
+        "processing_observation": {
+          "basis": "closed_cases",
+          "closed_handling_days": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "censored_internal_days": [
+            3,
+            14,
+            3,
+            11,
+            3,
+            8,
+            3,
+            5,
+            3,
+            2
+          ],
+          "handling_days_low_central_high": [
+            3.0,
+            3,
+            3.5
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            1.0,
+            1.42,
+            1.58
+          ]
+        },
+        "capacity_schedule": [],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "pessimistic"
+      }
+    },
+    {
+      "category": "advice",
+      "team_ref": "T-3",
+      "scenario": "central",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 9,
+            "independent_households": 8,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W06",
+            "received": 8,
+            "independent_households": 7,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W07",
+            "received": 16,
+            "independent_households": 13,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W08",
+            "received": 11,
+            "independent_households": 9,
+            "corrections": 1
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 8,
+          "central": 19,
+          "high": 22,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.8486
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 0,
+          "open_independent_households": 1,
+          "open_case_refs": [
+            "C-3"
+          ]
+        },
+        "processing_observation": {
+          "basis": "closed_cases",
+          "closed_handling_days": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "censored_internal_days": [
+            3,
+            14,
+            3,
+            11,
+            3,
+            8,
+            3,
+            5,
+            3,
+            2
+          ],
+          "handling_days_low_central_high": [
+            3.0,
+            3,
+            3.5
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            1.0,
+            1.42,
+            1.58
+          ]
+        },
+        "capacity_schedule": [],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "central"
+      }
+    },
+    {
+      "category": "advice",
+      "team_ref": "T-3",
+      "scenario": "optimistic",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 9,
+            "independent_households": 8,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W06",
+            "received": 8,
+            "independent_households": 7,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W07",
+            "received": 16,
+            "independent_households": 13,
+            "corrections": 0
+          },
+          {
+            "period": "2026-W08",
+            "received": 11,
+            "independent_households": 9,
+            "corrections": 1
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 8,
+          "central": 19,
+          "high": 22,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.8486
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 0,
+          "open_independent_households": 1,
+          "open_case_refs": [
+            "C-3"
+          ]
+        },
+        "processing_observation": {
+          "basis": "closed_cases",
+          "closed_handling_days": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "censored_internal_days": [
+            3,
+            14,
+            3,
+            11,
+            3,
+            8,
+            3,
+            5,
+            3,
+            2
+          ],
+          "handling_days_low_central_high": [
+            3.0,
+            3,
+            3.5
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            1.0,
+            1.42,
+            1.58
+          ]
+        },
+        "capacity_schedule": [],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "optimistic"
+      }
+    },
+    {
+      "category": "refund",
+      "team_ref": "T-1",
+      "scenario": "pessimistic",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 14,
+            "independent_households": 11,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W06",
+            "received": 19,
+            "independent_households": 15,
+            "corrections": 2
+          },
+          {
+            "period": "2026-W07",
+            "received": 12,
+            "independent_households": 10,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W08",
+            "received": 21,
+            "independent_households": 16,
+            "corrections": 3
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 12,
+          "central": 24,
+          "high": 28,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.7926
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 5,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-1",
+            "C-12",
+            "C-15",
+            "C-18",
+            "C-6",
+            "C-9"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            2,
+            13,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "handling_days_low_central_high": [
+            0.71,
+            4.29,
+            8.36
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.42,
+            0.99,
+            6.68
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 3,
+            "planned_absence": 1
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 2,
+            "planned_absence": 2
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "pessimistic"
+      }
+    },
+    {
+      "category": "refund",
+      "team_ref": "T-1",
+      "scenario": "central",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 14,
+            "independent_households": 11,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W06",
+            "received": 19,
+            "independent_households": 15,
+            "corrections": 2
+          },
+          {
+            "period": "2026-W07",
+            "received": 12,
+            "independent_households": 10,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W08",
+            "received": 21,
+            "independent_households": 16,
+            "corrections": 3
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 12,
+          "central": 24,
+          "high": 28,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.7926
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 5,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-1",
+            "C-12",
+            "C-15",
+            "C-18",
+            "C-6",
+            "C-9"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            2,
+            13,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "handling_days_low_central_high": [
+            0.71,
+            4.29,
+            8.36
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.42,
+            0.99,
+            6.68
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 3,
+            "planned_absence": 1
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 2,
+            "planned_absence": 2
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "central"
+      }
+    },
+    {
+      "category": "refund",
+      "team_ref": "T-1",
+      "scenario": "optimistic",
+      "trigger_facts": {
+        "arrival_history": [
+          {
+            "period": "2026-W05",
+            "received": 14,
+            "independent_households": 11,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W06",
+            "received": 19,
+            "independent_households": 15,
+            "corrections": 2
+          },
+          {
+            "period": "2026-W07",
+            "received": 12,
+            "independent_households": 10,
+            "corrections": 1
+          },
+          {
+            "period": "2026-W08",
+            "received": 21,
+            "independent_households": 16,
+            "corrections": 3
+          }
+        ],
+        "arrival_forecast": {
+          "basis": "trend",
+          "low": 12,
+          "central": 24,
+          "high": 28,
+          "trend_slope_per_period": 1.4,
+          "household_share": 0.7926
+        },
+        "current_backlog": {
+          "internal_open_cases": 1,
+          "external_open_cases": 5,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-1",
+            "C-12",
+            "C-15",
+            "C-18",
+            "C-6",
+            "C-9"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            2,
+            13,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "handling_days_low_central_high": [
+            0.71,
+            4.29,
+            8.36
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.42,
+            0.99,
+            6.68
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 3,
+            "planned_absence": 1
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 4,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 2,
+            "planned_absence": 2
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "optimistic"
+      }
+    },
+    {
+      "category": "renewal",
+      "team_ref": "T-2",
+      "scenario": "pessimistic",
+      "trigger_facts": {
+        "arrival_history": [],
+        "arrival_forecast": {
+          "basis": "no_history",
+          "low": 7,
+          "central": 7,
+          "high": 7,
+          "trend_slope_per_period": 0.0,
+          "household_share": 1.0
+        },
+        "current_backlog": {
+          "internal_open_cases": 7,
+          "external_open_cases": 0,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-10",
+            "C-13",
+            "C-16",
+            "C-19",
+            "C-2",
+            "C-4",
+            "C-7"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            12,
+            3,
+            15,
+            3,
+            12,
+            3,
+            9,
+            3,
+            6,
+            3,
+            3,
+            3,
+            0
+          ],
+          "handling_days_low_central_high": [
+            1.29,
+            5.77,
+            10.74
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.33,
+            0.74,
+            3.67
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 3,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 3,
+            "planned_absence": 0
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "pessimistic"
+      }
+    },
+    {
+      "category": "renewal",
+      "team_ref": "T-2",
+      "scenario": "central",
+      "trigger_facts": {
+        "arrival_history": [],
+        "arrival_forecast": {
+          "basis": "no_history",
+          "low": 7,
+          "central": 7,
+          "high": 7,
+          "trend_slope_per_period": 0.0,
+          "household_share": 1.0
+        },
+        "current_backlog": {
+          "internal_open_cases": 7,
+          "external_open_cases": 0,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-10",
+            "C-13",
+            "C-16",
+            "C-19",
+            "C-2",
+            "C-4",
+            "C-7"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            12,
+            3,
+            15,
+            3,
+            12,
+            3,
+            9,
+            3,
+            6,
+            3,
+            3,
+            3,
+            0
+          ],
+          "handling_days_low_central_high": [
+            1.29,
+            5.77,
+            10.74
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.33,
+            0.74,
+            3.67
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 3,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 3,
+            "planned_absence": 0
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "central"
+      }
+    },
+    {
+      "category": "renewal",
+      "team_ref": "T-2",
+      "scenario": "optimistic",
+      "trigger_facts": {
+        "arrival_history": [],
+        "arrival_forecast": {
+          "basis": "no_history",
+          "low": 7,
+          "central": 7,
+          "high": 7,
+          "trend_slope_per_period": 0.0,
+          "household_share": 1.0
+        },
+        "current_backlog": {
+          "internal_open_cases": 7,
+          "external_open_cases": 0,
+          "open_independent_households": 6,
+          "open_case_refs": [
+            "C-10",
+            "C-13",
+            "C-16",
+            "C-19",
+            "C-2",
+            "C-4",
+            "C-7"
+          ]
+        },
+        "processing_observation": {
+          "basis": "censored_segments_only",
+          "closed_handling_days": [],
+          "censored_internal_days": [
+            12,
+            3,
+            15,
+            3,
+            12,
+            3,
+            9,
+            3,
+            6,
+            3,
+            3,
+            3,
+            0
+          ],
+          "handling_days_low_central_high": [
+            1.29,
+            5.77,
+            10.74
+          ],
+          "per_person_weekly_throughput_low_central_high": [
+            0.33,
+            0.74,
+            3.67
+          ]
+        },
+        "capacity_schedule": [
+          {
+            "period": "2026-W05",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W06",
+            "available_people": 2,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W07",
+            "available_people": 3,
+            "planned_absence": 0
+          },
+          {
+            "period": "2026-W08",
+            "available_people": 3,
+            "planned_absence": 0
+          }
+        ],
+        "external_lag_assumption_days": {
+          "pessimistic": 6.0,
+          "central": 6,
+          "optimistic": 6.5
+        },
+        "scenario": "optimistic"
+      }
+    }
+  ]
+}

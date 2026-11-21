@@ -1,0 +1,6 @@
+cluster_id,complaint_refs,household_refs,confirmed_links,open_complaint_count,open_household_count
+C-1,C-1;C-14;C-15;C-2;C-3;C-7;C-8,H-1;H-2,C-1~C-2;C-15~C-14,5,2
+C-10,C-10;C-17,H-4,,1,1
+C-11,C-11;C-12;C-18;C-19;C-4;C-5,H-5;H-6,C-5~C-4,4,2
+C-13,C-13;C-6,H-7,,2,1
+C-16,C-16;C-9,H-3,,2,1

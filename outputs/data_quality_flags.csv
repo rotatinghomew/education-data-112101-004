@@ -1,0 +1,15 @@
+flag_code,severity,subject_type,subject_ref,detail
+no_events,gap,complaint,C-3,时间线标记: no_events
+impact_band_unknown,info,complaint,C-3,影响带未知：优先级采用保守因子，不判为低风险
+impact_band_unknown,info,complaint,C-5,影响带未知：优先级采用保守因子，不判为低风险
+impact_band_unknown,info,complaint,C-8,影响带未知：优先级采用保守因子，不判为低风险
+impact_band_unknown,info,complaint,C-11,影响带未知：优先级采用保守因子，不判为低风险
+impact_band_unknown,info,complaint,C-14,影响带未知：优先级采用保守因子，不判为低风险
+impact_band_unknown,info,complaint,C-17,影响带未知：优先级采用保守因子，不判为低风险
+arrival_category_missing,gap,category,renewal,到达汇总缺少该类别，预测仅来自投诉台账提交数（弱兜底），台账样本 7 件
+team_missing_from_capacity_schedule,gap,team,T-3,该团队有处置事件但无任何排班人数，产能无法量化
+specialty_label_mismatch,warning,team,T-2,排班专长标注为 advice，实际处置类别为 ['renewal']
+censored_segments_only,warning,team,T-1,只有未结案截断样本，高端办案天数已放大，见产能估计表
+throughput_note,info,team,T-1,仅观察到未结案的截断区间，高端天数已放大处理
+censored_segments_only,warning,team,T-2,只有未结案截断样本，高端办案天数已放大，见产能估计表
+throughput_note,info,team,T-2,仅观察到未结案的截断区间，高端天数已放大处理

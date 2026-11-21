@@ -1,0 +1,4 @@
+category,history_periods,history_received,history_households,trend_slope,flat_mean,central,low,high,household_share,household_central,household_low,household_high,basis,fallback_complaint_log_received
+advice,2026-W05;2026-W06;2026-W07;2026-W08,9;8;16;11,8;7;13;9,1.4,11.0,19,8,22,0.8486,16,7,18,trend,
+refund,2026-W05;2026-W06;2026-W07;2026-W08,14;19;12;21,11;15;10;16,1.4,16.5,24,12,28,0.7926,19,10,22,trend,
+renewal,,,,0.0,7.0,7,7,7,1.0,7,7,7,no_history,7

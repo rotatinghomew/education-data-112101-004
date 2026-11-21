@@ -1,0 +1,10 @@
+category,team_ref,scenario,planned_people,capacity_source_period,keep_up_people,clear_backlog_surcharge_people,recommended_people,gap_vs_planned,rationale_flags
+advice,T-3,pessimistic,,none,22.0,0.25,22,,team_missing_from_capacity_schedule
+advice,T-3,central,,none,13.38,0.18,14,,team_missing_from_capacity_schedule
+advice,T-3,optimistic,,none,5.06,0.16,5,,team_missing_from_capacity_schedule
+refund,T-1,pessimistic,2,2026-W08,69.64,0.6,70,68,throughput_based_on_censored_segments;planned_people_latest_known_2026-W08
+refund,T-1,central,2,2026-W08,25.51,0.25,26,24,throughput_based_on_censored_segments;planned_people_latest_known_2026-W08
+refund,T-1,optimistic,2,2026-W08,1.98,0.04,2,0,throughput_based_on_censored_segments;planned_people_latest_known_2026-W08
+renewal,T-2,pessimistic,3,2026-W08,21.21,5.3,27,24,arrival_forecast_from_case_log_fallback;throughput_based_on_censored_segments;planned_people_latest_known_2026-W08
+renewal,T-2,central,3,2026-W08,9.46,2.36,12,9,arrival_forecast_from_case_log_fallback;throughput_based_on_censored_segments;planned_people_latest_known_2026-W08
+renewal,T-2,optimistic,3,2026-W08,1.91,0.48,2,-1,arrival_forecast_from_case_log_fallback;throughput_based_on_censored_segments;planned_people_latest_known_2026-W08

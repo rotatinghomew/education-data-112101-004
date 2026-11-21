@@ -1,0 +1,4 @@
+team_ref,specialty,category,internal_observed_days,closed_handling_days,censored_segment_count,handling_days_low,handling_days_central,handling_days_high,per_person_throughput_low,per_person_throughput_central,per_person_throughput_high,basis,notes
+T-1,refund,refund,2;13;3;3;3;3;3,,1,0.71,4.29,8.36,0.42,0.99,6.68,censored_segments_only,仅观察到未结案的截断区间，高端天数已放大处理
+T-2,advice,advice,12;3;15;3;12;3;9;3;6;3;3;3;0,,7,1.29,5.77,10.74,0.33,0.74,3.67,censored_segments_only,仅观察到未结案的截断区间，高端天数已放大处理
+T-3,unknown,unknown,3;14;3;11;3;8;3;5;3;2,3;3;3;3;3,5,3.0,3,3.5,1.0,1.42,1.58,closed_cases,
