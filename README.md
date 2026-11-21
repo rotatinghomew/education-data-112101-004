@@ -19,3 +19,5 @@
 - `data/events.csv`
 - `data/links.csv`
 - `data/evidence.csv`
+- `data/arrivals.csv`
+- `data/capacity.csv`
